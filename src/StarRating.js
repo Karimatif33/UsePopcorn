@@ -3,7 +3,7 @@ import { useState } from "react";
 const containerStyle = { display: "flex", alignItems: "center", gap: "16px" };
 const starContainerStyle = { display: "flex" };
 
-export default function StarRating({ maxRating = 5, color ="#fcc419", size = 48, className = "", messages = [], defultRating = 0, }) {
+export default function StarRating({ maxRating = 5, color ="#fcc419", size = 28, className = "", messages = [], defultRating = 0, }) {
   const [rating, setRating] = useState(defultRating);
   const [tempRating, setTemprating] = useState(0)  
 
