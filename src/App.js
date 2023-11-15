@@ -193,7 +193,7 @@ function Movie({ movie, onSelectMovie }) {
           <span>{movie.Year}</span>
         </p>
       </div>
-    </li>
+    </li> 
   );
 }
 // function WatchedBox() {
