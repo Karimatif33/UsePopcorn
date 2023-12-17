@@ -3,12 +3,13 @@ import { useState } from "react";
 const containerStyle = { display: "flex", alignItems: "center", gap: "16px" };
 const starContainerStyle = { display: "flex" };
 
-export default function StarRating({ maxRating = 5, color ="#fcc419", size = 28, className = "", messages = [], defultRating = 0, }) {
+export default function StarRating({ maxRating = 5, color ="#fcc419", size = 28, className = "", messages = [], defultRating = 0, onSetRating }) {
   const [rating, setRating] = useState(defultRating);
   const [tempRating, setTemprating] = useState(0)  
 
   function handleRating(rating) {
     setRating(rating);
+    onSetRating(rating)
   }
 const textStyle = { lineHeight: "1", margin: "0",color ,fontSize: `${size / 1.5}px` };
 
